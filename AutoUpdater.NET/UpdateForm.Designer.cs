@@ -110,6 +110,7 @@ namespace AutoUpdaterDotNET
             this.AcceptButton = this.buttonUpdate;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.labelReleaseNotes);
             this.Controls.Add(this.labelDescription);
@@ -119,6 +120,7 @@ namespace AutoUpdaterDotNET
             this.Controls.Add(this.buttonRemindLater);
             this.Controls.Add(this.webView2);
             this.Controls.Add(this.webBrowser);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
