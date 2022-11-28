@@ -83,7 +83,6 @@ namespace AutoUpdaterDotNET
             // 
             // pictureBoxIcon
             // 
-            this.pictureBoxIcon.Image = global::AutoUpdaterDotNET.Properties.Resources.update;
             resources.ApplyResources(this.pictureBoxIcon, "pictureBoxIcon");
             this.pictureBoxIcon.Name = "pictureBoxIcon";
             this.pictureBoxIcon.TabStop = false;
@@ -100,9 +99,9 @@ namespace AutoUpdaterDotNET
             // webView2
             // 
             this.webView2.AllowExternalDrop = true;
+            resources.ApplyResources(this.webView2, "webView2");
             this.webView2.CreationProperties = null;
             this.webView2.DefaultBackgroundColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.webView2, "webView2");
             this.webView2.Name = "webView2";
             this.webView2.ZoomFactor = 1D;
             // 
