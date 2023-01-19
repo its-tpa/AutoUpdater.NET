@@ -27,12 +27,17 @@ namespace AutoUpdaterDotNET
                 AutoUpdater.AppTitle);
             labelDescription.Text =
                 string.Format(resources.GetString("labelDescription.Text", CultureInfo.CurrentCulture),
-                    AutoUpdater.AppTitle, _args.CurrentVersion, _args.InstalledVersion);
+                    AutoUpdater.AppTitle, _args.CurrentVersion, FormatVersion(_args.InstalledVersion));
 
             if (AutoUpdater.Mandatory && AutoUpdater.UpdateMode == Mode.Forced)
             {
                 ControlBox = false;
             }
+        }
+
+        private static string FormatVersion(Version version)
+        {
+            return $"{version.Major}.{version.Minor}.{version.Build}";
         }
 
         private async void InitializeBrowserControl()
